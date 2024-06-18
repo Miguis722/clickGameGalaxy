@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
-    
+    <audio id="music" autoplay loop>
+        <source src="storage/blackhole.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        function Playaudio() {
+            document.getElementById("music").play();
+        }
+    </script>
+    <div id="clickable-area">
+        <span id="click-count">0</span>
+    </div>
 </body>
 </html>
